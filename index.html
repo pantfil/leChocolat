@@ -29,22 +29,27 @@
                         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-                     </ul>        
-                </div>    
+                     </ul>
+                </div>
         </div>
     </nav>
 
     <header class="jumbotron">
         <div class="container">
             <div  class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-6 col-sm-6">
                     <h1>Le Chocolat</h1>
                     <p>We combine experience with creativity to create innovative tastes based on classic chocolate recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col-6 col-sm-3">
                     <img src="images/logo.png" class="img-fluid">
                 </div>
+
+                <div class=" col col-sm justify-content-center align-self-center">
+                        <button class="btn-sm btn bg-warning" id="reserveButton"> Reserve your baskets</button>
+                </div>
             </div>
+
         </div>
     </header>
 
@@ -67,9 +72,9 @@
                     Here you can taste the flavor of cocoa beans.</p>
                     </div>
                     </div>
-                
+
             </div>
-            
+
         </div>
 
         <div class="row flex-row-reverse row-content align-items-center ">
@@ -110,7 +115,7 @@
         </div>
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-8">
-                <div class="card">
+                <div class="card" id="card">
                     <h3 class="card-header bg-warning text-white">Reserve your baskets</h3>
                     <div class="card-body">
                         <form>
@@ -169,11 +174,11 @@
             </div>
         </div>
     </div>
-    
+
 
     <footer class="footer">
         <div class="container">
-            <div class="row">             
+            <div class="row">
                 <div class="col-5 offset-sm-1 col-sm-2" >
                     <h5>Links</h5>
                     <ul class="list-unstyled">
@@ -211,7 +216,7 @@
                     </div>
                 </div>
            </div>
-           <div class="row justify-content-center">             
+           <div class="row justify-content-center">
                 <div class="col-auto">
                     <p> &copy; Copyright 2018 Le Chocolat</p>
                 </div>
@@ -224,6 +229,11 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+     <script>
+        var buttonPress =document.getElementById("reserveButton").onclick=function(){
+        card.scrollIntoView({behavior: "smooth",block: "start",inline: "nearest"})};
+    </script>
 </body>
 
 </html>
