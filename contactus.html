@@ -8,18 +8,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-
+    <!-- endbuild -->
     <title>Le Chocolat: Contact Us</title>
-
+    
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" >
         <div class="container">
-            <a class="navbar-brand" href="#"><a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
+            <a class="navbar-brand" href="#"></a><a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,7 +30,7 @@
                         <span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html">
                         <span class="fa fa-info fa-lg"> </span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">
+                    <li class="nav-item"><a class="nav-link" href="/menu.html">
                         <span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item active" ><a class="nav-link" href="#">
                         <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
@@ -181,7 +182,7 @@
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="/menu.html">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
@@ -222,9 +223,13 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="js/scripts.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
